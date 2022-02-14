@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+}
+//main colors
+$bg_color: #3B3B98;
+$box_color: #23235B;
+$input_color: #151537;
+$white_color: #fff;
+
+body {
+  background-color: $bg_color;
+  font-family: 'Poppins', sans-serif;
+}
+h2,label,input,button {
+  color: $white_color;
+}
+#box {
+  background-color: $box_color;
+  height: fit-content;
+  width: 355px;
+  padding: 1%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  .box_title {
+    h2 {
+      width: 100%;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+  .box_result {
+    position: relative;
+    margin: 15px 0;
+    #passwordShow {
+      width: 100%;
+      height: 50px;
+      outline: none;
+      font-size: 18px;
+      padding: 10px;
+      background-color: $input_color;
+      border: none;
+      caret-color: $white_color;
+      display: flex;
+      align-items: center;
+      color: $white_color;
+    }
+    #clipboard {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      padding: 2.5%;
+      font-size: 20px;  
+      background-color: $bg_color;
+      cursor: pointer;
+    }
+  }
+  .generate_password {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    #btn_generator {  
+      width: 100%;
+      height: 40px;
+      background-color: $bg_color;
+      border: none;
+      text-transform: capitalize;
+      font-size: 17px;
+      cursor: pointer;
+    }
+  }
+}
